@@ -3,12 +3,12 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
-const { checkForAuthentication } = require("./middlewares/authentication");
+const { checkForAuthentication } = require("./src/middlewares/authentication");
 
-const Blog = require("./models/blog");
+const Blog = require("./src/models/blog");
 
-const userRoute = require("./routes/user");
-const blogRoute = require("./routes/blog");
+const userRoute = require("./src/routes/user");
+const blogRoute = require("./src/routes/blog");
 
 const app = express();
 const PORT = process.env.PORT ?? 8000;
