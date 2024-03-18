@@ -1,4 +1,5 @@
-require("dotenv").config();
+require('dotenv').config({ path: '/etc/secrets/.env' });
+
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
